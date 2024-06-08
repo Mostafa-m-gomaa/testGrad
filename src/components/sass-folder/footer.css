@@ -1,0 +1,36 @@
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.footer .icon-cont {
+  overflow: hidden;
+}
+
+.who {
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: var(--primary-clr3);
+}
+.who img {
+  width: 130px;
+  margin: auto;
+}
+.who h1 {
+  font-size: 42px;
+  margin: 0;
+}
+.who ul {
+  list-style: circle;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.who ul li {
+  text-align: right;
+}/*# sourceMappingURL=footer.css.map */

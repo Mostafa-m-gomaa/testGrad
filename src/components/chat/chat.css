@@ -1,0 +1,125 @@
+:root {
+  --sidebar-bg-color: #f5f7fa;
+  --sidebar-border-color: #e1e4e8;
+  --selected-chat-bg-color: #007bff;
+  --selected-chat-text-color: #fff;
+  --main-bg-color: #fff;
+  --message-bg-color: #f1f1f1;
+  --message-text-color: #333;
+  --input-border-color: #ccc;
+  --input-bg-color: #f9f9f9;
+  --button-bg-color: #007bff;
+  --button-text-color: #fff;
+  --button-hover-bg-color: #0056b3;
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--sidebar-bg-color);
+  color: black;
+}
+
+.chat-sidebar {
+  width: 300px;
+  background-color: var(--sidebar-bg-color);
+  padding: 20px;
+  border-right: 1px solid var(--sidebar-border-color);
+  overflow-y: auto;
+}
+
+.chat-sidebar h2 {
+  margin-top: 0;
+}
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-item {
+  padding: 10px;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+  background-color: var(--message-bg-color);
+}
+
+.chat-item.selected {
+  background-color: var(--selected-chat-bg-color);
+  color: var(--selected-chat-text-color);
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+}
+
+.chat-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--sidebar-border-color);
+  background-color: var(--sidebar-bg-color);
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+  align-self: flex-start;
+}
+
+.message p {
+  padding: 10px;
+  background-color: var(--message-bg-color);
+  border-radius: 10px;
+  color: var(--message-text-color);
+}
+
+.message-input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--sidebar-border-color);
+  background-color: var(--sidebar-bg-color);
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-bg-color);
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.send-button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.no-chat-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #888;
+}/*# sourceMappingURL=chat.css.map */

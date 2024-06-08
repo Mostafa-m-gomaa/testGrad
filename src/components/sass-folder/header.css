@@ -1,0 +1,51 @@
+.header {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgba(24, 23, 23, 0.25);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  right: 25%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 8px;
+  z-index: 1000;
+}
+.header .in-header {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: center;
+  gap: 20px;
+}
+.header .in-header .logo {
+  width: 180px;
+  margin: 0 20px 0 10px;
+}
+.header .in-header a {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  transition: 0.5s;
+  align-items: center;
+  display: flex;
+  font-weight: bolder;
+  color: rgb(0, 0, 0) !important;
+}
+.header .in-header a:hover {
+  color: white !important;
+}
+.header .in-header .active {
+  color: white !important;
+  font-weight: bolder;
+}
+.header .in-header .login-btn {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 30px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  color: black !important;
+  font-weight: bolder;
+}/*# sourceMappingURL=header.css.map */

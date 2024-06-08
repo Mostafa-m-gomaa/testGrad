@@ -1,0 +1,55 @@
+.header{
+    width: fit-content;
+    
+
+background: rgba(24, 23, 23, 0.25);
+// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 50px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+position: fixed;
+right: 25%;
+margin: 0 auto;
+// transform: translateX(50%);  
+margin-top: 20px;
+padding: 0 8px;
+z-index: 1000;
+.in-header{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    gap: 20px;
+.logo{
+    width: 180px;
+    margin: 0 20px 0 10px;
+}
+a{
+    min-width: fit-content;
+    transition: 0.5s;
+    align-items: center;
+    display: flex;
+    font-weight: bolder;
+    color: rgb(0, 0, 0) !important;
+    &:hover{
+        color: white !important;
+     
+    }
+}
+.active{
+    color: white !important;
+    font-weight: bolder;
+
+}
+
+.login-btn{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 30px;
+    min-width: fit-content;
+    color: black !important;
+    font-weight:bolder;
+}
+}
+}

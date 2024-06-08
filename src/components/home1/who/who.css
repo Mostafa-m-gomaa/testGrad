@@ -1,0 +1,57 @@
+.who {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+.who .container {
+  display: flex;
+  justify-content: space-between;
+  height: 85vh;
+}
+.who .container .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  z-index: 10;
+}
+.who .container .left div {
+  width: 80%;
+  margin: 15px 0;
+  color: rgb(162, 166, 170);
+  text-align: right;
+}
+.who .container .left h1 {
+  text-align: center;
+}
+.who .container .left a {
+  color: black;
+  text-decoration: none;
+  background-color: var(--main);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.who .container .right {
+  width: 40%;
+  position: relative;
+  height: 100%;
+}
+.who .container .right img {
+  position: absolute;
+}
+.who .container .right .shape-one {
+  min-width: 680px;
+  left: 20%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.who .container .right .person {
+  min-width: 620px;
+  bottom: -130px;
+  right: -20px;
+  z-index: 10;
+}/*# sourceMappingURL=who.css.map */
